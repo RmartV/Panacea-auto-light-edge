@@ -102,7 +102,7 @@ function NodeDisplay({ type, value, isDark }) {
 /* ── Main App ── */
 function App() {
   const [apiKey, setApiKey]         = useState('');
-  const [username, setUsername]     = useState('Pawpochita');
+  const [username, setUsername]     = useState('');
   const [client, setClient]         = useState(null);
   const [status, setStatus]         = useState('Disconnected');
   const [nodes, setNodes]           = useState({});
@@ -222,7 +222,7 @@ function App() {
                     type="text"
                     value={feedInput}
                     onChange={(e) => { setFeedInput(e.target.value); setFeedError(''); }}
-                    placeholder="mart-photo"
+                    placeholder="feed-slug"
                   />
                 </div>
                 <div className="input-group">
